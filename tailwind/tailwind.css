@@ -1,0 +1,85 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Farvevariabler */
+:root {
+    --primary: #007bff;
+    --neon-pink: #ff6ec4;
+    --neon-purple: #9d50ff;
+    --neon-blue: #3a86ff;
+}
+
+/* Global styling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Neue Montreal", sans-serif !important;
+    background-color: black;
+    color: white;
+}
+
+a {
+    color: var(--neon-pink);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+[target]:target {
+    color: #7e22ce; /* Equivalent to text-purple-500 */
+    font-weight: bold; /* Equivalent to font-bold */
+}
+
+a:hover {
+    color: var(--neon-purple);
+    text-shadow: 0 0 8px var(--neon-purple), 0 0 16px var(--neon-blue);
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: black;
+}
+
+/* Tilføj perspective for bedre 3D-effekt */
+.group {
+    position: relative;
+    perspective: 800px;
+}
+
+/* Rotation ved hover */
+.group:hover .profile-img {
+    transform: rotateY(10deg) rotateX(10deg);
+}
+
+/* Overlay-effekt */
+.group::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.1));
+    mix-blend-mode: overlay;
+    pointer-events: none;
+}
+
+@keyframes moveGrid {
+    from {
+        transform: scale(1.02) translate(0, 0);
+    }
+    to {
+        transform: scale(1.02) translate(-40px, -40px);
+    }
+}
+
+.footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 20px;
+}

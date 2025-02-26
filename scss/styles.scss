@@ -1,0 +1,227 @@
+/* Importer kun Bootstrap SCSS, hvis du bruger mixins eller variabler */
+// @use '../node_modules/bootstrap/scss/bootstrap';
+
+// Farvevariabler
+$primary: #007bff;
+$neon-pink: #ff6ec4;
+$neon-purple: #9d50ff;
+$neon-blue: #3a86ff;
+
+// Global styling
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Neue Montreal", sans-serif !important;
+}
+
+a {
+  color: $neon-pink;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+
+  &:hover {
+    color: $neon-purple;
+    text-shadow: 0 0 8px $neon-purple, 0 0 16px $neon-blue;
+  }
+}
+
+// Navbar styling
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .navbar-brand,
+  .nav-link {
+    transition: color 0.3s ease-in-out;
+    color: $neon-purple !important;
+
+    &:hover {
+      color: $neon-pink !important;
+    }
+  }
+
+  .nav-link.active {
+    background-color: transparent !important;
+    color: $neon-pink !important;
+  }
+}
+
+// Hero sektion
+.hero {
+  height: 100vh;
+  background: black;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .profile-img {
+    height: 150px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-out;
+
+    &:hover {
+      transform: rotateY(10deg) rotateX(10deg);
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(255, 255, 255, 0.1)
+    );
+    mix-blend-mode: overlay;
+    pointer-events: none;
+  }
+}
+
+// Fælles flex-center klasse
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-row,
+.contact-icons {
+  @extend .flex-center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.icon-row i,
+.contact-icons a {
+  font-size: 3rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    transform: scale(1.2);
+    color: $neon-pink;
+  }
+}
+
+// Project Cards
+.project-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 8px;
+
+  &:hover {
+    transform: translateY(-8px);
+
+    img {
+      transform: scale(1.1);
+    }
+
+    .overlay {
+      opacity: 1;
+    }
+  }
+
+  img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 20px;
+    border-radius: 8px;
+
+    .btn {
+      border: 1px solid white;
+      color: white;
+      border-radius: 20px;
+      padding: 8px 20px;
+      transition: background 0.3s ease-in-out;
+
+      &:hover {
+        background: $neon-purple;
+        color: white;
+        border-color: $neon-purple;
+      }
+    }
+  }
+}
+
+.divider {
+  margin: 0 10px;
+  opacity: 0.6;
+}
+
+// Contact section
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: white;
+  }
+
+  p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    margin-bottom: 20px;
+    color: white;
+  }
+}
+
+#about {
+  position: relative;
+  padding: 100px 0;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background-image: linear-gradient(
+      rgba(236, 91, 209, 0.63) 1px, transparent 1px
+    ),
+    linear-gradient(90deg, rgba(91, 93, 236, 0.63) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.7;
+    z-index: 0;
+    animation: moveGrid 10s linear infinite;
+    backface-visibility: hidden;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+@keyframes moveGrid {
+  from {
+    transform: scale(1.02) translate(0, 0);
+  }
+  to {
+    transform: scale(1.02) translate(-40px, -40px);
+  }
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/stylesBulma.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://your-font-provider.com/neue-montreal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body class="has-background-black has-text-white is-flex is-flex-direction-column" style="min-height: 100vh;">
+    <!-- Sticky Navbar -->
+    <nav class="navbar is-black is-fixed-top has-shadow-black" role="navigation" aria-label="main navigation" style="--navbar-color: var(--neon-purple);">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item has-text-white" href="#">JKB</a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item has-text-white" href="#home">Home</a>
+                    <a class="navbar-item has-text-white" href="#about">About</a>
+                    <a class="navbar-item has-text-white" href="#projects">Projects</a>
+                    <a class="navbar-item has-text-white" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <header id="home" class="hero is-fullheight is-black has-text-centered is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
+        <div class="hero-body has-text-centered">
+            <div class="container">
+                <img src="../src/mignormal.jpg" alt="Mit billede" class="profile-img">
+                <h1 class="title is-3 has-text-weight-normal has-text-white">[ FULLSTACK DEVELOPER ]</h1>
+                <p class="subtitle is-5 has-text-white">
+                    PERFORMANCE <span class="divider">|</span> SUSTAINABILITY <span class="divider">|</span> ACCESSIBILITY
+                </p>
+            </div>
+        </div>
+
+        <!-- Social Icons at Bottom -->
+        <div class="hero-foot p-4">
+            <div class="container">
+                <div class="columns is-mobile is-gapless">
+                    <div class="column has-text-centered icon-column">
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                    <div class="column has-text-centered icon-column">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="column has-text-centered icon-column">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section has-background-black is-fullheight">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-2"></div>
+                <div class="column is-9">
+                    <p class="is-size-4 content">
+                        My expertise lies in seamlessly combining front-end and back-end operations to create a smooth
+                        and cohesive website experience. Interactivity, sustainability, and accessibility are at the
+                        core of my work, ensuring an engaging user experience that keeps visitors interested and
+                        exploring.
+                        <br><br>
+                        I prioritize simplicity and dynamic design while maintaining a structure that is easy to update,
+                        scalable, and built for long-term growth.
+                    </p>
+                </div>
+                <div class="column is-3"></div>
+            </div>
+            <div class="columns">
+                <div class="column is-6"></div>
+                <div class="column is-6">
+                    <p class="content">
+                        I'm Julie, a Danish full-stack developer currently diving into web development. I’m a bit of a
+                        homebody - nothing beats unwinding with video games or getting lost in nature, especially in
+                        places filled with trees. <br> <br>
+                        I love expressing my creativity through web design and occasionally
+                        through painting (even if my skills still need some work… for now). When I’m not coding or
+                        creating, I spend as much time as I can with friends and family.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="container py-5 min-100-vh">
+        <h2 class="title has-text-centered has-text-white mb-5">Projects</h2>
+        <div class="columns is-multiline">
+            
+            <!-- Projekt 1 -->
+            <div class="column is-one-quarter">
+                <div class="card has-background-dark has-shadow project-card">
+                    <div class="card-image">
+                        <figure class="image is-square">
+                            <img src="../src/smartchoice.png" alt="Smart Choice">
+                        </figure>
+                    </div>
+                    <div class="card-content has-text-white has-text-centered">
+                        <p class="content">Smart Choice is a web app designed to educate students in a fun and creative way about digital sustainability.</p>
+                        <a href="#" class="button is-outlined is-rounded has-text-white custom-btn">Visit</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Projekt 2 -->
+            <div class="column is-one-quarter">
+                <div class="card has-background-dark has-shadow project-card">
+                    <div class="card-image">
+                        <figure class="image is-square">
+                            <img src="../src/nordisknedbrydning.png" alt="Nordisk Nedbrydning">
+                        </figure>
+                    </div>
+                    <div class="card-content has-text-white has-text-centered">
+                        <p class="content">Nordisk Nedbrydning required a new website built with WordPress, along with a refreshed visual identity.</p>
+                        <a href="#" class="button is-outlined is-rounded has-text-white custom-btn">Visit</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Projekt 3 -->
+            <div class="column is-one-quarter">
+                <div class="card has-background-dark has-shadow project-card">
+                    <div class="card-image">
+                        <figure class="image is-square">
+                            <img src="../src/foodfuel.png" alt="Food Fuel">
+                        </figure>
+                    </div>
+                    <div class="card-content has-text-white has-text-centered">
+                        <p class="content">Omfauna is a sustainable t-shirt brand featuring animal-inspired designs. All proceeds support charities dedicated to protecting Danish wildlife.</p>
+                        <a href="#" class="button is-outlined is-rounded has-text-white custom-btn">Visit</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Projekt 4 -->
+            <div class="column is-one-quarter">
+                <div class="card has-background-dark has-shadow project-card">
+                    <div class="card-image">
+                        <figure class="image is-square">
+                            <img src="../src/chair.png" alt="Scrolly-telling">
+                        </figure>
+                    </div>
+                    <div class="card-content has-text-white has-text-centered">
+                        <p class="content">A scrolly-telling project which depicts a company's sustainable journey.</p>
+                        <a href="#" class="button is-outlined is-rounded has-text-white custom-btn">Visit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="hero is-fullheight has-background-black has-text-centered is-flex is-flex-direction-column is-justify-content-center is-align-items-center p-6">
+        <div class="hero-body">
+            <div class="container">
+                <h2 class="title has-text-white">Contact</h2>
+                <p>Feel free to reach out!</p>
+                <div>
+                    <a href="mailto:julie_kristina1@hotmail.com" class="icon is-large">
+                        <i class="fas fa-envelope fa-2x"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yourprofile" class="icon is-large">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="tel:+4530863354" class="icon is-large">
+                        <i class="fas fa-phone fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer has-background-black has-text-white has-text-centered">
+        <p>&copy; 2025 Julie Barrit | Designed with love</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

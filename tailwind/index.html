@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body class="bg-black scroll-smooth">
+    <!-- Sticky Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-black shadow-md z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+
+            <!-- Logo -->
+            <a href="#" class="text-xl font-bold">JKB</a>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="lg:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <!-- Nav Links (Desktop) -->
+<ul class="hidden lg:flex space-x-6">
+    <li><a href="#home" class="hover:text-gray-400 text-gray-500 target:text-purple-500 font-bold">Home</a></li>
+    <li><a href="#about" class="hover:text-gray-400 text-gray-500 target:text-purple-500 font-bold">About</a></li>
+    <li><a href="#projects" class="hover:text-gray-400 text-gray-500 target:text-purple-500 font-bold">Projects</a></li>
+    <li><a href="#contact" class="hover:text-gray-400 text-gray-500 target:text-purple-500 font-bold">Contact</a></li>
+</ul>
+
+        </div>
+
+        <!-- Mobile Menu (Dropdown) -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-black text-center py-4">
+            <a href="#home" class="block py-2 hover:text-gray-400">Home</a>
+            <a href="#about" class="block py-2 hover:text-gray-400">About</a>
+            <a href="#projects" class="block py-2 hover:text-gray-400">Projects</a>
+            <a href="#contact" class="block py-2 hover:text-gray-400">Contact</a>
+        </div>
+    </nav>
+
+    <header id="home" class="flex flex-col items-center justify-center h-screen text-center space-y-6 relative">
+        <div class="flex flex-col items-center">  <!-- Ændret fra text-center til flex -->
+            <div class="relative group">
+                <img src="../src/mignormal.jpg" alt="Mit billede" class="profile-img h-36 mb-5 transition-transform duration-300 ease-out block">
+            </div>
+            <h1 class="text-5xl font-bold mt-4">[ FULLSTACK DEVELOPER ]</h1>
+            <p class="text-lg mt-2">
+                PERFORMANCE <span class="mx-2">|</span> SUSTAINABILITY <span class="mx-2">|</span> ACCESSIBILITY
+            </p>
+        </div>
+    
+        <!-- Sociale ikoner nederst -->
+        <div class="absolute bottom-0 w-full">
+            <div class="grid grid-cols-3 text-center py-3 border-t border-b border-gray-700">
+                <div>
+                    <a href="#" class="text-2xl hover:text-neon-purple"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <div>
+                    <a href="#" class="text-2xl hover:text-neon-purple"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div>
+                    <a href="#" class="text-2xl hover:text-neon-purple"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <section id="about" class="relative min-h-screen flex my-5 bg-black text-white py-24 overflow-hidden">
+        <!-- Tekst til venstre -->
+        <div class="container mx-auto relative z-10 px-6 lg:px-12">
+            <!-- Første række (stor tekst) -->
+            <div class="flex justify-center">
+                <div class="max-w-4xl">
+                    <p class="text-xl md:text-3xl leading-relaxed">
+                        My expertise lies in seamlessly combining front-end and back-end operations to create a smooth
+                        and cohesive website experience. Interactivity, sustainability, and accessibility are at the
+                        core of my work, ensuring an engaging user experience that keeps visitors interested and
+                        exploring.
+                        <br><br>
+                        I prioritize simplicity and dynamic design while maintaining a structure that is easy to update,
+                        scalable, and built for long-term growth.
+                    </p>
+                </div>
+            </div>
+            <!-- Anden række (lille tekst) -->
+            <div class="flex flex-col lg:flex-row mt-10 items-center">
+                <!-- Ikoner -->
+                <div class="w-full lg:w-1/2 text-center">
+                    <div class="icon-row"></div>
+                </div>
+                <div class="w-full lg:w-1/2 max-w-2xl mx-auto">
+                    <p class="text-base md:text-lg leading-relaxed">
+                        I'm Julie, a Danish full-stack developer currently diving into web development. I’m a bit of a
+                        homebody - nothing beats unwinding with video games or getting lost in nature, especially in
+                        places filled with trees. <br> <br>
+                        I love expressing my creativity through web design and occasionally
+                        through painting (even if my skills still need some work… for now). When I’m not coding or
+                        creating, I spend as much time as I can with friends and family.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Baggrundsanimering -->
+        <div
+            class="absolute inset-0 w-full h-full scale-105 opacity-70 bg-[length:40px_40px] bg-[linear-gradient(rgba(236,91,209,0.63)_1px,transparent_1px),linear-gradient(90deg,rgba(91,93,236,0.63)_1px,transparent_1px)] animate-[moveGrid_10s_linear_infinite]">
+        </div>
+    </section>
+
+    <section id="projects" class="container mx-auto py-10 min-h-screen">
+        <h2 class="text-3xl font-bold text-center text-white mb-10">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- Projekt 1 -->
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 flex flex-col items-center text-center">
+                <div class="w-full aspect-square overflow-hidden">
+                    <img src="../src/smartchoice.png" alt="Smart Choice" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <p class="text-white flex-grow">Smart Choice is a web app designed to educate students in a fun and creative way about digital sustainability.</p>
+                    <a href="#" class="mt-4 px-6 py-2 border-2 border-white text-white rounded-full transition hover:bg-purple-600 hover:border-purple-600">Visit</a>
+                </div>
+            </div>
+    
+            <!-- Projekt 2 -->
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 flex flex-col items-center text-center">
+                <div class="w-full aspect-square overflow-hidden">
+                    <img src="../src/nordisknedbrydning.png" alt="Nordisk Nedbrydning" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <p class="text-white flex-grow">Nordisk Nedbrydning required a new website built with WordPress, along with a refreshed visual identity.</p>
+                    <a href="#" class="mt-4 px-6 py-2 border-2 border-white text-white rounded-full transition hover:bg-purple-600 hover:border-purple-600">Visit</a>
+                </div>
+            </div>
+    
+            <!-- Projekt 3 -->
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 flex flex-col items-center text-center">
+                <div class="w-full aspect-square overflow-hidden">
+                    <img src="../src/foodfuel.png" alt="Food Fuel" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <p class="text-white flex-grow">Omfauna is a sustainable t-shirt brand featuring animal-inspired designs. All proceeds support charities dedicated to protecting Danish wildlife.</p>
+                    <a href="#" class="mt-4 px-6 py-2 border-2 border-white text-white rounded-full transition hover:bg-purple-600 hover:border-purple-600">Visit</a>
+                </div>
+            </div>
+    
+            <!-- Projekt 4 -->
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 flex flex-col items-center text-center">
+                <div class="w-full aspect-square overflow-hidden">
+                    <img src="../src/chair.png" alt="Scrolly-telling" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <p class="text-white flex-grow">A scrolly-telling project which depicts a company's sustainable journey.</p>
+                    <a href="#" class="mt-4 px-6 py-2 border-2 border-white text-white rounded-full transition hover:bg-purple-600 hover:border-purple-600">Visit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="w-full h-screen flex flex-col items-center justify-center text-white text-center py-24 px-5">
+        <h2 class="contact-title font-bold mb-4 text-4xl">Contact</h2>
+        <p class="contact-text">Feel free to reach out!</p>
+    
+        <div class="contact-icons flex space-x-6 mt-6 text-3xl transition-transform duration-300 ease-in-out">
+            <a href="mailto:julie_kristina1@hotmail.com" class="contact-icon transform hover:scale-125 hover:text-purple-500" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://linkedin.com/in/yourprofile" class="contact-icon transform hover:scale-125 hover:text-purple-500" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="tel:+4530863354" class="contact-icon transform hover:scale-125 hover:text-purple-500" aria-label="Phone">
+            <i class="fas fa-phone"></i>
+            </a>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Julie Barrit | Designed with love</p>
+    </footer>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

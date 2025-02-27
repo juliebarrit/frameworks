@@ -97,7 +97,7 @@ a {
   transition: transform 0.3s ease-in-out;
 
   &:hover {
-    transform: scale(1.05); // Add zoom effect
+    transform: scale(1.05); 
 
     img {
       transform: scale(1.1);
@@ -105,7 +105,6 @@ a {
   }
 
   img {
-    transition: transform 0.3s ease-in-out;
     border-radius: 8px;
   }
 
@@ -134,52 +133,4 @@ a {
   opacity: 0.6;
 }
 
-#contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 100px 20px;
 
-  h2 {
-    margin-bottom: 15px;
-  }
-
-  p {
-    opacity: 0.8;
-    margin-bottom: 20px;
-  }
-
-  .flex-center {
-    display: flex;
-    justify-content: center;
-  }
-
-  .contact-icons {
-    @extend .flex-center;
-    gap: 20px;
-    margin-top: 10px;
-  }
-
-  .contact-icons a {
-    font-size: 3rem;
-    color: $neon-purple;
-    transition: transform 0.3s ease, color 0.3s ease;
-
-    &:hover {
-      transform: scale(1.2);
-      color: $neon-pink;
-    }
-  }
-}
-
-.contact-icon {
-  color: $neon-purple;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
-
-  &:hover {
-    color: $neon-pink;
-    text-shadow: 0 0 8px $neon-pink, 0 0 16px $neon-blue;
-  }
-}

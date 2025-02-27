@@ -11,19 +11,17 @@
 </head>
 
 <body class="bg-black scroll-smooth text-white">
-    <!-- Sticky Navbar -->
+
     <nav class="fixed top-0 left-0 w-full bg-black shadow-md z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
 
-            <!-- Logo -->
+
             <a href="#" class="text-xl font-bold">JKB</a>
 
-            <!-- Mobile Menu Button -->
             <button id="menu-btn" class="lg:hidden text-white focus:outline-none">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
 
-            <!-- Nav Links (Desktop) -->
             <ul class="hidden lg:flex space-x-6">
                 <li><a href="#home" class="hover:text-gray-400 text-gray-500 target:text-purple-500 font-bold">Home</a>
                 </li>
@@ -37,7 +35,6 @@
 
         </div>
 
-        <!-- Mobile Menu (Dropdown) -->
         <div id="mobile-menu" class="hidden lg:hidden bg-black text-center py-4">
             <a href="#home" class="block py-2 hover:text-gray-400">Home</a>
             <a href="#about" class="block py-2 hover:text-gray-400">About</a>
@@ -47,7 +44,7 @@
     </nav>
 
     <header id="home" class="flex flex-col items-center justify-center h-screen text-center space-y-6 relative">
-        <div class="flex flex-col items-center"> <!-- Ændret fra text-center til flex -->
+        <div class="flex flex-col items-center">
             <div class="relative group [perspective:800px]">
                 <img src="../src/mignormal.jpg" alt="Mit billede"
                     class="profile-img h-36 mb-5 transition-transform duration-300 ease-out group-hover:rotate-y-10 group-hover:rotate-x-10">
@@ -57,25 +54,27 @@
                 PERFORMANCE <span class="mx-2">|</span> SUSTAINABILITY <span class="mx-2">|</span> ACCESSIBILITY
             </p>
         </div>
-
-        <!-- Sociale ikoner nederst -->
         <div class="absolute bottom-0 w-full">
             <div class="grid grid-cols-3 text-center py-3 border-t border-b border-gray-700">
                 <div>
-                    <a href="mailto:julie_kristina1@hotmail.com" class="text-2xl hover:text-neon-purple"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="mailto:julie_kristina1@hotmail.com" class="text-2xl hover:text-neon-purple"><i
+                            class="fa-solid fa-envelope"></i></a>
                 </div>
                 <div>
-                    <a href="https://www.linkedin.com/in/julie-barrit/" class="text-2xl hover:text-neon-purple"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/julie-barrit/" class="text-2xl hover:text-neon-purple"><i
+                            class="fa-brands fa-linkedin"></i></a>
                 </div>
                 <div>
-                    <a href="https://github.com/juliebarrit" class="text-2xl hover:text-neon-purple"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/juliebarrit" class="text-2xl hover:text-neon-purple"><i
+                            class="fa-brands fa-github"></i></a>
                 </div>
             </div>
         </div>
     </header>
 
 
-    <section id="about" class="relative min-h-screen flex items-center justify-center bg-black text-white py-24 overflow-hidden">
+    <section id="about"
+        class="relative min-h-screen flex items-center justify-center bg-black text-white py-24 overflow-hidden">
         <!-- Tekst til venstre -->
         <div class="container mx-auto relative z-10 px-6 lg:px-12">
             <!-- Første række (stor tekst) -->
@@ -110,7 +109,6 @@
                 </div>
             </div>
         </div>
-        <!-- Baggrundsanimering -->
         <div
             class="absolute inset-0 w-full h-full scale-105 opacity-70 bg-[length:40px_40px] bg-[linear-gradient(rgba(236,91,209,0.63)_1px,transparent_1px),linear-gradient(90deg,rgba(91,93,236,0.63)_1px,transparent_1px)] animate-[moveGrid_10s_linear_infinite]">
         </div>
@@ -120,7 +118,6 @@
         <h2 class="text-3xl font-bold text-center text-white mb-10">Projects</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-            <!-- Projekt 1 -->
             <div
                 class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 flex flex-col items-center text-center">
                 <div class="w-full aspect-square overflow-hidden">
@@ -134,7 +131,6 @@
                 </div>
             </div>
 
-            <!-- Projekt 2 -->
             <div
                 class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 flex flex-col items-center text-center">
                 <div class="w-full aspect-square overflow-hidden">
@@ -149,7 +145,6 @@
                 </div>
             </div>
 
-            <!-- Projekt 3 -->
             <div
                 class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 flex flex-col items-center text-center">
                 <div class="w-full aspect-square overflow-hidden">
@@ -163,7 +158,6 @@
                 </div>
             </div>
 
-            <!-- Projekt 4 -->
             <div
                 class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 flex flex-col items-center text-center">
                 <div class="w-full aspect-square overflow-hidden">

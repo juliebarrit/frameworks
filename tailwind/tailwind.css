@@ -10,15 +10,8 @@
     --neon-blue: #3a86ff;
 }
 
-/* Global styling */
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: "Neue Montreal", sans-serif !important;
-    background-color: black;
-    color: white;
 }
 
 a {
@@ -37,38 +30,6 @@ a:hover {
     text-shadow: 0 0 8px var(--neon-purple), 0 0 16px var(--neon-blue);
 }
 
-.hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: black;
-}
-
-/* Tilføj perspective for bedre 3D-effekt */
-.group {
-    position: relative;
-    perspective: 800px;
-}
-
-/* Rotation ved hover */
-.group:hover .profile-img {
-    transform: rotateY(10deg) rotateX(10deg);
-}
-
-/* Overlay-effekt */
-.group::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.1));
-    mix-blend-mode: overlay;
-    pointer-events: none;
-}
-
 @keyframes moveGrid {
     from {
         transform: scale(1.02) translate(0, 0);
@@ -76,10 +37,4 @@ a:hover {
     to {
         transform: scale(1.02) translate(-40px, -40px);
     }
-}
-
-.footer {
-    margin-top: auto;
-    text-align: center;
-    padding: 20px;
 }

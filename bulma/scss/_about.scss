@@ -1,0 +1,37 @@
+@import "variables";
+
+#about {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background-image: linear-gradient(
+      rgba(236, 91, 209, 0.63) 1px, transparent 1px
+    ),
+    linear-gradient(90deg, rgba(91, 93, 236, 0.63) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.7;
+    z-index: 0;
+    animation: moveGrid 10s linear infinite;
+    backface-visibility: hidden;
+  }
+
+  .container {
+    z-index: 2;
+  }
+}
+
+@keyframes moveGrid {
+  from {
+    transform: scale(1.02) translate(0, 0);
+  }
+  to {
+    transform: scale(1.02) translate(-40px, -40px);
+  }
+}

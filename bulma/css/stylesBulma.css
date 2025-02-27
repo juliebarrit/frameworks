@@ -10,9 +10,9 @@ body {
 a {
   color: #ff6ec4;
   text-decoration: none;
-  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  text-shadow: 0.3s ease-in-out;
 }
-
 a:hover {
   color: #9d50ff;
   text-shadow: 0 0 8px #9d50ff, 0 0 16px #3a86ff;
@@ -22,7 +22,6 @@ a:hover {
   transition: color 0.3s ease-in-out;
   color: #9d50ff !important;
 }
-
 .navbar .navbar-item:hover {
   color: #ff6ec4 !important;
 }
@@ -32,11 +31,9 @@ a:hover {
   margin-bottom: 20px;
   transition: transform 0.3s ease-out;
 }
-
 .hero .profile-img:hover {
   transform: rotateY(10deg) rotateX(10deg);
 }
-
 .hero::before {
   content: "";
   position: absolute;
@@ -45,36 +42,11 @@ a:hover {
   mix-blend-mode: overlay;
   pointer-events: none;
 }
-
 .hero .hero-foot {
   width: 100%;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
 }
-
-.hero .hero-foot .columns {
-  width: 100%;
-  margin: 0;
-}
-
-.hero .hero-foot .icon-column {
-  width: 33.33%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 0;
-}
-
-.hero .hero-foot .icon-column a {
-  font-size: 1rem;
-  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.hero .hero-foot .icon-column a:hover {
-  transform: scale(1.1);
-  color: #9d50ff;
-}
-
 .hero .divider {
   margin: 0 10px;
   opacity: 0.6;
@@ -82,10 +54,8 @@ a:hover {
 
 #about {
   position: relative;
-  padding: 100px 0;
   overflow: hidden;
 }
-
 #about::before {
   content: "";
   position: absolute;
@@ -100,9 +70,7 @@ a:hover {
   animation: moveGrid 10s linear infinite;
   backface-visibility: hidden;
 }
-
 #about .container {
-  position: relative;
   z-index: 2;
 }
 
@@ -119,10 +87,7 @@ a:hover {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
 }
-
 .project-card:hover {
   transform: scale(1.03);
 }
@@ -132,60 +97,18 @@ a:hover {
   padding: 8px 20px;
   transition: background 0.3s ease-in-out, border-color 0.3s ease-in-out;
   border: 2px solid white;
+  border: 2px solid white;
+  transition: background 0.3s ease-in-out;
 }
-
 .custom-btn:hover {
   background: #9d50ff;
   border-color: #9d50ff;
   color: white;
 }
-
-.image.is-square img {
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+.custom-btn:hover {
+  background: #9d50ff;
+  border-color: #9d50ff;
+  color: white;
 }
-
-#contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-#contact h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
-
-#contact p {
-  font-size: 1.1rem;
-  opacity: 0.8;
-  margin-bottom: 20px;
-}
-
-.icon-row,
-.contact-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  margin-top: 10px;
-}
-
-.icon-row i,
-.contact-icons a {
-  font-size: 3rem;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.icon-row i:hover,
-.contact-icons a:hover {
-  transform: scale(1.2);
-  color: #ff6ec4;
-} 
 
 /*# sourceMappingURL=stylesBulma.css.map */

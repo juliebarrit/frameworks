@@ -1,0 +1,22 @@
+@import "variables";
+@import "mixins";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Neue Montreal", sans-serif !important;
+}
+
+a {
+  color: $neon-pink;
+  text-decoration: none;
+  @include transition(color, 0.3s, ease-in-out);
+  text-shadow: 0.3s ease-in-out;
+
+  &:hover {
+    color: $neon-purple;
+    text-shadow: 0 0 8px $neon-purple, 0 0 16px $neon-blue;
+  }
+}

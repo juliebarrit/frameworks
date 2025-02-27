@@ -1,0 +1,28 @@
+@import "variables";
+@import "mixins";
+
+.project-card {
+  @include transition(transform, 0.3s, ease-in-out);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.custom-btn {
+  margin-top: 1rem;
+  padding: 8px 20px;
+  @include button-style($neon-purple, white);
+  border: 2px solid white;
+  @include transition(background, 0.3s, ease-in-out);
+
+  &:hover {
+    background: $neon-purple;
+    border-color: $neon-purple;
+    color: white;
+  }
+}
+

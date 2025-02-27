@@ -1,0 +1,13 @@
+@mixin button-style($bg-color, $border-color) {
+  transition: background 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  border: 2px solid $border-color;
+  &:hover {
+    background: $bg-color;
+    border-color: $bg-color;
+    color: white;
+  }
+}
+
+@mixin transition($property, $duration, $timing) {
+  transition: #{$property} #{$duration} #{$timing};
+}

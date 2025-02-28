@@ -19,7 +19,7 @@
 <body class="bg-black" data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-root-margin="0px 0px -40%"
     data-bs-smooth-scroll="true">
 
-    <nav id="navbar-example" class="navbar navbar-expand-lg bg-black sticky-top shadow-sm">
+    <nav id="navbar" class="navbar navbar-expand-lg bg-black sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand text-primary" href="#">JKB</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -44,7 +44,7 @@
         <div class="container-fluid position-absolute bottom-0 w-100">
             <div class="row w-100">
                 <div class="col text-center py-3 border-top border-bottom">
-                    <a href="mailto:julie_kristina1@hotmail.com"><i class="fa-solid fa-envelope"></i> </a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i> </a>
                 </div>
                 <div class="col text-center py-3 border-top border-bottom">
                     <a href="https://www.linkedin.com/in/julie-barrit/"> <i class="fa-brands fa-linkedin"></i></a>
@@ -58,7 +58,6 @@
 
     <section id="about" class="container-fluid min-vh-100 d-flex flex-column justify-content-center bg-black text-white py-5">
         <div class="container position-relative">
-            <!-- Første række (stor tekst) -->
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <p class="about-main-text fs-4">
@@ -72,9 +71,7 @@
                     </p>
                 </div>
             </div>
-            <!-- Anden række (lille tekst) -->
             <div class="row mt-4 align-items-center">
-                <!-- Ikoner (25% bredde) -->
                 <div class="col-lg-6 text-center">
                     <div class="icon-row"></div>
                 </div>
@@ -92,60 +89,46 @@
         </div>
     </section>
     
-    
-    <section id="projects" class="container-fluid min-vh-100 d-flex flex-column justify-content-center">
+    <section id="projects" class="container min-vh-100 d-flex flex-column align-items-center justify-content-center">
         <h2 class="text-center mb-4 text-white">Projects</h2>
-        <div class="row g-4">
+        <div class="row g-4 justify-content-center">
             
-            <!-- Projekt 1 -->
-            <div class="col-md-3">
-                <div class="card h-100 shadow-sm bg-dark text-white hover-lift">
-                    <img src="../src/smartchoice.png" class="card-img-top img-fluid" alt="Smart Choice">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card project-card bg-dark text-white">
+                    <img src="../src/smartchoice.png" class="card-img-top" alt="Smart Choice">
                     <div class="card-body">
-                        <p class="card-text">Smart Choice is a web app designed to educate students in a fun and creative way
-                            about digital sustainability</p>
-                            <a href="https://semester-projekt-762fa.web.app/" class="btn btn-outline-light rounded-pill px-3 py-2 hover-btn">Visit</a>
-
-
+                        <p class="card-text">Smart Choice is a web app designed to educate students about digital sustainability.</p>
+                        <a href="https://semester-projekt-762fa.web.app/" class="btn btn-outline-light">Visit</a>
                     </div>
                 </div>
             </div>
     
-            <!-- Projekt 2 -->
-            <div class="col-md-3">
-                <div class="card h-100 shadow-sm bg-dark text-white hover-lift">
-                    <img src="../src/nordisknedbrydning.png" class="card-img-top img-fluid" alt="Nordisk Nedbrydning">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card project-card bg-dark text-white">
+                    <img src="../src/nordisknedbrydning.png" class="card-img-top" alt="Nordisk Nedbrydning">
                     <div class="card-body">
-                        <p class="card-text">Nordisk Nedbrydning required a new website built with WordPress, along with a
-                            refreshed visual identity</p>
-                            <a href="https://www.nordisk-nedbrydning.dk/" class="btn btn-outline-light rounded-pill px-3 py-2 hover-btn">Visit</a>
-
-
+                        <p class="card-text">Nordisk Nedbrydning required a new website built with WordPress.</p>
+                        <a href="https://www.nordisk-nedbrydning.dk/" class="btn btn-outline-light">Visit</a>
                     </div>
                 </div>
             </div>
     
-            <!-- Projekt 3 -->
-            <div class="col-md-3">
-                <div class="card h-100 shadow-sm bg-dark text-white hover-lift">
-                    <img src="../src/foodfuel.png" class="card-img-top img-fluid" alt="Food Fuel">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card project-card bg-dark text-white">
+                    <img src="../src/foodfuel.png" class="card-img-top" alt="Food Fuel">
                     <div class="card-body">
-                        <p class="card-text">Omfauna is a sustainable t-shirt brand featuring animal-inspired designs. All proceeds support charities dedicated to protecting Danish wildlife.</p>
-                        <a href="#" class="btn btn-outline-light rounded-pill px-3 py-2 hover-btn">Visit</a>
-
-
+                        <p class="card-text">Omfauna is a sustainable t-shirt brand featuring animal-inspired designs.</p>
+                        <a href="#" class="btn btn-outline-light">Visit</a>
                     </div>
                 </div>
             </div>
     
-            <!-- Projekt 4 -->
-            <div class="col-md-3">
-                <div class="card h-100 shadow-sm bg-dark text-white hover-lift">
-                    <img src="../src/chair.png" class="card-img-top img-fluid" alt="Scrolly-telling">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card project-card bg-dark text-white">
+                    <img src="../src/chair.png" class="card-img-top" alt="Scrolly-telling">
                     <div class="card-body">
-                        <p class="card-text">A scrolly-telling project which depicts a company's sustainable journey.</p>
-                        <a href="#" class="btn btn-outline-light rounded-pill px-3 py-2 hover-btn">Visit</a>
-
+                        <p class="card-text">A scrolly-telling project depicting a company's sustainable journey.</p>
+                        <a href="#" class="btn btn-outline-light">Visit</a>
                     </div>
                 </div>
             </div>
@@ -166,7 +149,7 @@
                 </a>
             </div>
             <div class="col-auto">
-                <a href="https://www.linkedin.com/in/julie-barrit/" class="contact-icon" target="_blank" aria-label="LinkedIn">
+                <a href="https://linkedin.com/in/yourprofile" class="contact-icon" target="_blank" aria-label="LinkedIn">
                     <i class="fab fa-linkedin fa-2x"></i>
                 </a>
             </div>

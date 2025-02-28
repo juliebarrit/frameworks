@@ -11,7 +11,6 @@
 </head>
 
 <body class="has-background-black has-text-white is-flex is-flex-direction-column" style="min-height: 100vh;">
-    <!-- Sticky Navbar -->
     <nav class="navbar is-black is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="container">
             <div class="navbar-brand">
@@ -33,7 +32,6 @@
         </div>
     </nav>
 
-    <!-- HOME SECTION -->
     <header id="home" class="hero is-fullheight is-black has-text-centered is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
         <div class="hero-body has-text-centered">
             <div class="container">
@@ -45,7 +43,6 @@
             </div>
         </div>
 
-        <!-- Social Icons at Bottom -->
         <div class="hero-foot p-4">
             <div class="container">
                 <div class="columns is-mobile is-gapless">
@@ -63,8 +60,6 @@
         </div>
     </header>
 
-    <!-- ABOUT SECTION -->
-<!-- ABOUT SECTION -->
 <section id="about" class="section has-background-black is-fullheight is-flex is-align-items-center">
     <div class="container">
         <div class="columns is-vcentered">
@@ -98,14 +93,11 @@
     </div>
 </section>
 
-    
-    <!-- PROJECTS SECTION -->
     <section id="projects" class="section has-background-black is-fullheight is-flex is-align-items-center">
         <div class="container">
             <h2 class="title has-text-centered has-text-white mb-5">Projects</h2>
             <div class="columns is-multiline">
-                
-                <!-- Projekt 1 -->
+
                 <div class="column is-one-quarter">
                     <div class="card project-card has-background-dark">
                         <div class="card-image">
@@ -119,8 +111,7 @@
                         </div>
                     </div>
                 </div>
-        
-                <!-- Projekt 2 -->
+
                 <div class="column is-one-quarter">
                     <div class="card project-card has-background-dark">
                         <div class="card-image">
@@ -135,7 +126,6 @@
                     </div>
                 </div>
         
-                <!-- Projekt 3 -->
                 <div class="column is-one-quarter">
                     <div class="card project-card has-background-dark">
                         <div class="card-image">
@@ -149,8 +139,7 @@
                         </div>
                     </div>
                 </div>
-        
-                <!-- Projekt 4 -->
+
                 <div class="column is-one-quarter">
                     <div class="card project-card has-background-dark">
                         <div class="card-image">
@@ -168,7 +157,6 @@
         </div>
     </section>
 
-    <!-- CONTACT SECTION -->
     <section id="contact" class="hero is-fullheight has-background-black has-text-centered is-flex is-flex-direction-column is-justify-content-center is-align-items-center p-6">
         <div class="hero-body">
             <div class="container">
@@ -189,28 +177,22 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer class="footer has-background-black has-text-white has-text-centered">
         <p>&copy; 2025 Julie Barrit | Designed with love</p>
     </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Get all "navbar-burger" elements
             const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-            // Check if there are any navbar burgers
             if ($navbarBurgers.length > 0) {
 
-                // Add a click event on each of them
                 $navbarBurgers.forEach(el => {
                     el.addEventListener('click', () => {
 
-                        // Get the target from the "data-target" attribute
                         const target = el.dataset.target;
                         const $target = document.getElementById(target);
 
-                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
                         el.classList.toggle('is-active');
                         $target.classList.toggle('is-active');
 
